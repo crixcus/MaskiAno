@@ -11,6 +11,7 @@ public class ProjectileSpawner : MonoBehaviour
         if (Input.GetButtonDown("Fire1"))
         {
             // Instantiate bullet at the player's position with default rotation
+            audioManager.Instance.PlaySFX("laser");
             Instantiate(bulletPrefab, transform.position, Quaternion.identity);
         }
     }

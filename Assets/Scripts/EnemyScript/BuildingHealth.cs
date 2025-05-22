@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class BuildingHealth : MonoBehaviour
 {
-    public Image healthbarSprite;
+    //public Image healthbarSprite;
     public float reduceSpeed = 2;
     private float target = 1;
 
@@ -31,7 +31,7 @@ public class BuildingHealth : MonoBehaviour
     private void Update()
     {
         //transform.rotation = Quaternion.LookRotation(transform.position - cam.transform.position);
-        healthbarSprite.fillAmount = Mathf.MoveTowards(healthbarSprite.fillAmount, target, reduceSpeed * Time.deltaTime);
+        //healthbarSprite.fillAmount = Mathf.MoveTowards(healthbarSprite.fillAmount, target, reduceSpeed * Time.deltaTime);
 
         if (currentHP <= 0)
         {
