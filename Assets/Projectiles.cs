@@ -6,6 +6,7 @@ public class Projectiles : MonoBehaviour
 {
     public float movementSpeed = 10f;
     private Vector3 moveDirection;
+    public float bulletDamage = 10;
 
     void Start()
     {
@@ -50,6 +51,4 @@ public class Projectiles : MonoBehaviour
             GameManager.Instance.UpdateScore(10);
         }
     }
-
-
 }

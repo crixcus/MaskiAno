@@ -3,20 +3,26 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class playerHealth : MonoBehaviour
+public class BuildingHealth : MonoBehaviour
 {
     public Image healthbarSprite;
     public float reduceSpeed = 2;
     private float target = 1;
 
-    public float maxHP = 100f;
-    public float currentHP = 100f;
+    public float maxHP = 300f;
+    public float currentHP = 300f;
 
     //private Camera cam;
     private void Start()
     {
         //cam = Camera.main;
     }
+
+    public void Hacking()
+    {
+        currentHP -= 5;
+    }
+
     public void UpdateHPBar(float maxHP, float currentHP)
     {
         target = currentHP / maxHP;

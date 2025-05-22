@@ -29162,9 +29162,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2809829159418898160}
+  - component: {fileID: 1647502726}
   m_Layer: 0
   m_Name: Defense System
-  m_TagString: Untagged
+  m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29176,12 +29177,25 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3293631160856542282}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 723.7728, y: 1.096384, z: -100.869316}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 13.00366, y: 13.00366, z: 13.00366}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3285275752190418070}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1647502726
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3293631160856542282}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.232053, y: 2.7119212, z: 2.2949796}
+  m_Center: {x: -0.005041684, y: 0.34838516, z: -0.024972415}
