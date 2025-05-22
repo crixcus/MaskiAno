@@ -9,8 +9,8 @@ public class BuildingHealth : MonoBehaviour
     public float reduceSpeed = 2;
     private float target = 1;
 
-    public float maxHP = 300f;
-    public float currentHP = 300f;
+    public float maxHP = 10f;
+    public float currentHP = 10f;
 
     //private Camera cam;
     private void Start()
@@ -18,10 +18,10 @@ public class BuildingHealth : MonoBehaviour
         //cam = Camera.main;
     }
 
-    public void Hacking()
-    {
-        currentHP -= 5;
-    }
+    //public void Hacking()
+    //{
+    //    currentHP -= 5;
+    //}
 
     public void UpdateHPBar(float maxHP, float currentHP)
     {

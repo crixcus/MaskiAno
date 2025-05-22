@@ -34,6 +34,7 @@ public class Projectiles : MonoBehaviour
     {
         // Move the projectile forward
         transform.position += moveDirection * movementSpeed * Time.deltaTime;
+
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -51,4 +52,6 @@ public class Projectiles : MonoBehaviour
             GameManager.Instance.UpdateScore(10);
         }
     }
+
+
 }
