@@ -721,11 +721,11 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 0
   windowsGamepadBackendHint: 0
-  cloudProjectId: 
+  cloudProjectId: d38e4b7b-0fc7-4d8e-8e33-028e1f990d3b
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: 
-  organizationId: 
+  projectName: MaskiAno
+  organizationId: el_gatt
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   playerDataPath: 
