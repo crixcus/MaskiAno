@@ -52,7 +52,7 @@ public class GameManager : MonoBehaviour
             int minutes = Mathf.FloorToInt(currentTime / 60f);
             int seconds = Mathf.FloorToInt(currentTime % 60f);
 
-            timerText.text = string.Format("Time: {0:00}:{1:00}", minutes, seconds);
+            timerText.text = string.Format(" {0:00}:{1:00}", minutes, seconds);
         }
     }
 
