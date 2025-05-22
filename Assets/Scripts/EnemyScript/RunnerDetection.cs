@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class DetectionZone : MonoBehaviour
+public class RunnerDetection : MonoBehaviour
 {
     public enum Shape { Sphere, Cube }
     public Shape detectionShape = Shape.Sphere;
@@ -9,15 +9,16 @@ public class DetectionZone : MonoBehaviour
     public string targetTag = "Player";
 
     private bool playerDetected = false;
-    public SentryBehavior willChase;
+    public RunnerBehavior behavior;
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag(targetTag))
         {
             playerDetected = true;
-            willChase.Chase();
-            //call shoot
+            behavior.RunAwayFromPlayer();
+            behavior.FightFlight();
+            //call run
         }
     }
 
@@ -26,8 +27,9 @@ public class DetectionZone : MonoBehaviour
         if (other.CompareTag(targetTag))
         {
             playerDetected = false;
-            willChase.StopChase();
-            //call dont shoot 
+            behavior.ResumeRoaming();
+            behavior.FightFlight();
+            //call roam
         }
     }
 
