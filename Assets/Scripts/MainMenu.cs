@@ -32,7 +32,7 @@ public class MainMenu : MonoBehaviour
         settingsPanel.SetActive(true);
         mainMenuButtons.SetActive(false);
     }
-
+        
     public void Instructions()
     {
         instructionsPanel.SetActive(true);
