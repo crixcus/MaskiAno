@@ -17,6 +17,7 @@ public class DetectionZone : MonoBehaviour
         {
             playerDetected = true;
             willChase.Chase();
+            //call shoot
         }
     }
 
@@ -26,6 +27,7 @@ public class DetectionZone : MonoBehaviour
         {
             playerDetected = false;
             willChase.StopChase();
+            //call dont shoot 
         }
     }
 

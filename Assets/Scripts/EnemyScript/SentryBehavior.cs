@@ -1,11 +1,16 @@
+using System.Collections;
 using UnityEngine;
 
 public class SentryBehavior: MonoBehaviour
 {
     public SentryBehavior Instance;
-    public Transform target;         
+    public Transform target;
+    public EnemyShoot shooting;
+
     public float speed = 5f;         
     public bool isChasing = false;
+
+    public float firedelay = 2f;
 
 
     public void Start()
@@ -25,10 +30,12 @@ public class SentryBehavior: MonoBehaviour
     public void Chase()
     {
         isChasing = true;
+        shooting.ShootCommence();
     }
 
     public void StopChase()
     {
         isChasing = false;
+        shooting.StopShooting();
     }
 }
